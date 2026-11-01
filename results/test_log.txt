@@ -1,0 +1,12 @@
+test_base_and_scenarios (test_lab.TestZoo.test_base_and_scenarios) ... ok
+test_forbidden_feed_detected (test_lab.TestZoo.test_forbidden_feed_detected) ... ok
+test_reference_feasible (test_lab.TestZoo.test_reference_feasible) ... ok
+test_seed_is_reproducible (test_lab.TestZoo.test_seed_is_reproducible) ... ok
+test_shadow_local_prediction (test_lab.TestZoo.test_shadow_local_prediction) ... ok
+test_shortage_cannot_improve_minimum (test_lab.TestZoo.test_shortage_cannot_improve_minimum) ... ok
+test_size (test_lab.TestZoo.test_size) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.015s
+
+OK

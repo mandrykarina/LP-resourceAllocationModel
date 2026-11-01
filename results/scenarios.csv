@@ -1,0 +1,4 @@
+scenario,status,cost_rub_per_day,iterations
+base,optimal,38.10398238741649,19
+shortage,optimal,38.98712188868619,21
+stress,optimal,47.87442535922288,25

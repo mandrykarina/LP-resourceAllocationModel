@@ -1,0 +1,159 @@
+{
+  "base": {
+    "scenario": "base",
+    "description": "Базовый",
+    "status_code": 0,
+    "status": "optimal",
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_rub_per_day": 38.10398238741649,
+    "nit": 19,
+    "validation": {
+      "valid": true,
+      "max_violation": 1.4210854715202004e-14,
+      "violations": {
+        "nonnegative": 0.0,
+        "mandatory_min": 0.0,
+        "forbidden": 0.0,
+        "stock": 0.0,
+        "minimum_nutrients": 1.4210854715202004e-14,
+        "maximum_energy": 0.0,
+        "finite": 0.0
+      },
+      "objective_rub_per_day": 38.10398238741647,
+      "nutrients_received": [
+        [
+          84.64930000000001,
+          1193.4279181801162,
+          2463.5633206993043,
+          71.4459554584865,
+          3.0096999999999996
+        ],
+        [
+          23.475700000000007,
+          293.892,
+          811.0584436702172,
+          18.38327024581606,
+          1.2937
+        ],
+        [
+          24.780299999999986,
+          358.2005870782577,
+          341.7610140097246,
+          5.558,
+          1.2267
+        ]
+      ]
+    },
+    "shadow_check": {
+      "resource": "hay",
+      "delta_kg": 0.0782,
+      "marginal_rub_per_kg": -0.5330377877055008,
+      "predicted_delta_cost_rub": -0.04168355499857017,
+      "actual_delta_cost_rub": -0.04168355499857768
+    },
+    "active_constraints": [
+      "stock:hay",
+      "stock:barley",
+      "min:ungulates:energy_MJ",
+      "min:ungulates:vitamin_A_mg",
+      "min:rodents:energy_MJ",
+      "min:rodents:protein_g",
+      "min:rodents:vitamin_A_mg",
+      "min:primates:energy_MJ",
+      "min:primates:calcium_g",
+      "min:primates:vitamin_A_mg"
+    ]
+  },
+  "shortage": {
+    "scenario": "shortage",
+    "description": "Дефицит (-20% запас сена)",
+    "status_code": 0,
+    "status": "optimal",
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_rub_per_day": 38.98712188868619,
+    "nit": 21,
+    "validation": {
+      "valid": true,
+      "max_violation": 1.4210854715202004e-14,
+      "violations": {
+        "nonnegative": 0.0,
+        "mandatory_min": 0.0,
+        "forbidden": 0.0,
+        "stock": 0.0,
+        "minimum_nutrients": 1.4210854715202004e-14,
+        "maximum_energy": 0.0,
+        "finite": 0.0
+      },
+      "objective_rub_per_day": 38.98712188868618,
+      "nutrients_received": [
+        [
+          84.64929999999998,
+          1198.5494149545866,
+          2301.695146310136,
+          71.0038279030841,
+          3.009699999999999
+        ],
+        [
+          23.4757,
+          293.892,
+          720.4711988282597,
+          18.01299498012817,
+          1.2937000000000003
+        ],
+        [
+          24.780300000000004,
+          369.06551443476314,
+          348.4226805721223,
+          5.558,
+          1.2267
+        ]
+      ]
+    }
+  },
+  "stress": {
+    "scenario": "stress",
+    "description": "Стресс (-20% два запаса, +20% нормы)",
+    "status_code": 0,
+    "status": "optimal",
+    "message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+    "objective_rub_per_day": 47.87442535922288,
+    "nit": 25,
+    "validation": {
+      "valid": true,
+      "max_violation": 1.4210854715202004e-14,
+      "violations": {
+        "nonnegative": 0.0,
+        "mandatory_min": 0.0,
+        "forbidden": 0.0,
+        "stock": 0.0,
+        "minimum_nutrients": 1.4210854715202004e-14,
+        "maximum_energy": 0.0,
+        "finite": 0.0
+      },
+      "objective_rub_per_day": 47.87442535922288,
+      "nutrients_received": [
+        [
+          101.57915999999997,
+          1328.0544,
+          2686.747204985306,
+          73.23620471258822,
+          3.6116399999999995
+        ],
+        [
+          28.170840000000002,
+          352.6704,
+          508.53599999999994,
+          17.440248737928318,
+          1.5524400000000003
+        ],
+        [
+          29.73636,
+          421.2631827596849,
+          402.267325830497,
+          6.6696,
+          1.4720399999999996
+        ]
+      ]
+    }
+  }
+}
